@@ -1,6 +1,3 @@
-import lxml.etree as le
-
-
 # Script for fixing following issue when importing Confluence space:
 
 # Error during import Confluence space from another instance:
@@ -33,6 +30,7 @@ import lxml.etree as le
 # zip -d ArchiveName.zip __MACOSX/\*
 # zip -d ArchiveName.zip \*/.DS_Store
 
+import lxml.etree as le
 
 # path to file that need to be modified
 path = 'entities.xml'
