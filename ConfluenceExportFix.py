@@ -40,10 +40,9 @@ path = 'entities.xml'
 counter = 0
 with open(path, 'r') as f:
     doc = le.parse(f)
-    # root = doc.Element("/")
     for elem in doc.xpath('//object[@package="com.atlassian.confluence.spaces"]'):
         counter = counter + 1
-        if counter > 1:
+        if counter > 1: # ommit first object element and remove the rest
             parent = elem.getparent()
             parent.remove(elem)
     # updated file will be stored in entities_mod.xml
