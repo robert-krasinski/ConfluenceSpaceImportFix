@@ -34,4 +34,5 @@ You will need to open the Terminal, go to the folder where the archive is locate
 the following commands:
 
 zip -d ArchiveName.zip __MACOSX/\*
+
 zip -d ArchiveName.zip \*/.DS_Store
